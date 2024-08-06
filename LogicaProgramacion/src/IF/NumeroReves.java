@@ -1,9 +1,10 @@
+package IF;
 import java.util.Scanner;
 
-public class capicua {
+public class NumeroReves {
 
 	public static void main(String[] args) {
-		//Pedir un número entre 0 y 9.999, decir si es capicúa
+		// Pedir un número entre 0 y 9.999 y mostrarlo con las cifras al revés
 		int num;
 		 int dm, um, c, d, u;
 		 Scanner entrada= new Scanner(System.in);
@@ -24,11 +25,12 @@ public class capicua {
 		 num = num / 10;
 		 // decenas de millar
 		 dm = num;
-		 if(dm == u && um == d)
-			 System.out.print("el numero es capicua");
-		 else
-			 System.out.print("el numero no es capicua");
-			 
+		 // lo imprimimos al revés:
+		 System.out.println (u + " " + d + " " + c + " " + um + " " + dm);
+		 // otra forma de hacerlo es
+		 num = 10000*u + 1000*d + 100*c + 10*um + dm;
+		 System.out.println (num);
+
 	}
 
 }

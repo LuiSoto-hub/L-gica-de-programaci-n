@@ -1,10 +1,10 @@
+package IF;
 import java.util.Scanner;
 
-public class numerosIguales {
+public class Orden {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//Pedir dos números y decir cual es el mayor o si son iuales 
+		// Pedir dos números y mostrarlos ordenados de mayor a menor.
 		int num1, num2;
 		Scanner entrada= new Scanner(System.in);
 		System.out.println("agrega un numero ");
@@ -12,12 +12,12 @@ public class numerosIguales {
 		System.out.println("agrega un numero ");
 		num2= entrada.nextInt();
 		if (num1==num2)
-			System.out.println("son iguales");
+			System.out.println("el orden es "+num1+num2);
 		else {
 		if (num1<num2)
-			System.out.println("el "+num1+ " es menor, y el numero "+num2+" es mayor.");
+			System.out.println("el orden es "+num1+","+num2);
 		else 
-			System.out.println("el "+num2+" es menor, y el numero "+num1+" es mayor.");
+			System.out.println("el orden es "+num2+","+ num1);
 		}
 	}
 
